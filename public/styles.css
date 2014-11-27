@@ -9,6 +9,7 @@ body {
 
 h1 {
 	font-style: italic;
+	float: left;
 }
 
 #editor {
@@ -27,4 +28,19 @@ h1 {
 	left: 50%;
 	right: 0;
 	margin: 15px;
+}
+
+.example-buttons {
+	float: right;
+	margin-top: 30px;
+	margin-right: 15px;
+}
+
+.example-buttons div {
+	display: inline-block;
+
+}
+.example-buttons div:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
