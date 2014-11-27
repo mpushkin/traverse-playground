@@ -1,0 +1,30 @@
+/*body {
+	background-color: #272827;
+	color: #e7e8e9;
+}*/
+body {
+	background-color: #211404;
+	color: #ebe4b2;
+}
+
+h1 {
+	font-style: italic;
+}
+
+#editor {
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+	margin: 15px;
+}
+
+#results {
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	margin: 15px;
+}
