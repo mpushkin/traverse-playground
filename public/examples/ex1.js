@@ -11,5 +11,6 @@ var data = {
 };
 
 traverse(data).forEach(function(x) {
-	console.log('we are here: "' + this.key + '"', x);
+// 	console.log('we are here: "' + this.key + '"');
+// 	console.log('we see this:', x);
 });

@@ -1,3 +1,4 @@
+// disclaimer: I know that browserify rocks, but for this evening hack it's good enough
 (function(window) {
 	var traverse = window.traverse = function(obj) {
 		return new Traverse(obj);
