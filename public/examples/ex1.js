@@ -1,5 +1,15 @@
-console.log('hey there');
+console.log('lets get started');
 
-for (var i = 0; i < 5; i++) {
-	console.log('i = ', i);
-}
+var data = {
+	someProp: {
+		someNestedProp: {
+			someDeeperNesterProp: {
+				someValue: 'really deep'
+			}
+		}
+	}
+};
+
+traverse(data).forEach(function(x) {
+	console.log('we are here: "' + this.key + '"', x);
+});

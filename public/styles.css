@@ -1,7 +1,3 @@
-/*body {
-	background-color: #272827;
-	color: #e7e8e9;
-}*/
 body {
 	background-color: #211404;
 	color: #ebe4b2;
@@ -10,11 +6,12 @@ body {
 h1 {
 	font-style: italic;
 	float: left;
+	margin-top: 0px;
 }
 
 #editor {
 	position: absolute;
-	top: 70px;
+	top: 45px;
 	bottom: 0;
 	left: 0;
 	right: 50%;
@@ -23,7 +20,7 @@ h1 {
 
 #results {
 	position: absolute;
-	top: 70px;
+	top: 45px;
 	bottom: 0;
 	left: 50%;
 	right: 0;
@@ -32,7 +29,7 @@ h1 {
 
 .example-buttons {
 	float: right;
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-right: 15px;
 }
 

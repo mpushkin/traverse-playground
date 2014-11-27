@@ -12,6 +12,13 @@ $(function() {
 			editor.selection.moveCursorBy(0, -2);
 		}
 	});
+	editor.commands.addCommand({
+		bindKey: {win: 'Ctrl-T', mac: 'Command-T'},
+		exec: function(editor) {
+			editor.insert("traverse()");
+			editor.selection.moveCursorBy(0, -1);
+		}
+	});
 
 	var results = ace.edit("results");
 	results.setTheme("ace/theme/monokai");
@@ -53,14 +60,12 @@ $(function() {
 		}
 	}
 
-	$('#ex1').click(loadExampleById);
-	$('#ex2').click(loadExampleById);
-	$('#ex3').click(loadExampleById);
+	$('#ex1').click(loadExampleById.bind(this, 'ex1'));
+	$('#ex2').click(loadExampleById.bind(this, 'ex2'));
+	$('#ex3').click(loadExampleById.bind(this, 'ex3'));
+	loadExampleById('ex0');
 
-	$('#ex1').click();
-
-	function loadExampleById(e) {
-		var exampleId = e.target.id;
+	function loadExampleById(exampleId) {
 		$.get('/examples/' + exampleId + '.js', function(code) {
 			editor.setValue(code);
 			editor.selection.clearSelection();
