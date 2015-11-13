@@ -66,7 +66,7 @@ $(function() {
 	loadExampleById('ex0');
 
 	function loadExampleById(exampleId) {
-		$.get('/examples/' + exampleId + '.js', function(code) {
+		$.get('examples/' + exampleId + '.js', function(code) {
 			editor.setValue(code);
 			editor.selection.clearSelection();
 		}, 'text');
