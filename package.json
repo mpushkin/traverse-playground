@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/mpushkin/traverse-playground/issues"
   },
-  "homepage": "https://github.com/mpushkin/traverse-playground",
-  "dependencies": {
-    "express": "^4.10.4",
-    "traverse": "^0.6.6"
-  }
+  "homepage": "https://mpushkin.github.io/traverse-playground"
 }
